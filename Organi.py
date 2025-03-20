@@ -5,7 +5,22 @@ import PySimpleGUI as org
 saraksts=[['File',['Close']], ['Help'],['About']]
 organs = [
         [org.Menu(saraksts)],
-        
+        [org.Text("Ar ko cilvēks redz?")],
+        [org.T("                   "), org.Radio('Degunu', 'Radio1', default=False, key='-jaa-')],
+        [org.T("                   "), org.Radio('Acīm', 'Radio1', default=False, key='-nee-')],
+
+
+
+
+
+
+
+
+
+
+
+
+
      ]  
 logs = org.Window("ORGĀNU SPĒLE", organs, size=(900,650))
 

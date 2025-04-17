@@ -40,12 +40,15 @@ jautajumi = [
 
 index = 0
 
+max_punkti = len(jautajumi)
+
 organs = [
         [org.Menu(saraksts)],
         [org.Text(jautajumi[index]["jautajums"], key='-jaut-')],
         [org.T("                   "), org.Radio(jautajumi[index]["atbildes"][0], 'Radio1', default=False, key='-atb0-')],
         [org.T("                   "), org.Radio(jautajumi[index]["atbildes"][1], 'Radio1', default=False, key='-atb1-')],
         [org.T("                   "), org.Radio(jautajumi[index]["atbildes"][2], 'Radio1', default=False, key='-atb2-')],
+        [org.Text(f"Tavi punkti: 0/{max_punkti}", key='-punkt-')]
         [org.Button("Pareizi/Nepareizi!"), org.Button("Nākamais jautājums!")],
         [org.Text("     ", key='-teksts-')]
 

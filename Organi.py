@@ -63,13 +63,19 @@ logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", organs, size=(900,650))
 
 
 while True:
-   event, values = logs.read()
+    event, values = logs.read()
  
     # Kā IZET, ja logs tiek aizvērts
-   if event == org.WINDOW_CLOSED or event=='Close':
-       break
-   elif event=='About':
+    if event == org.WINDOW_CLOSED or event=='Close':
+        break
+    elif event=='About':
         org.popup('Autori: Emīls Ronis un Evelīna Ģelze')
+
+    elif event=="Pareizi/Nepareizi!":
+        for i in range(3):
+            if values[f"-atb{i}-"]:
+             izvele = i
+
 
 
 

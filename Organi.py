@@ -31,11 +31,11 @@ jautajumi = [
 
     {"jautajums": "Kurš orgāns atrodas galvaskausā un vada ķermeņa funkcijas?", 
      "atbildes": ["Acis", "Kaulu smadzenes", "Smadzenes"], 
-     "pareizā_atbilde": "Plaušas"},
+     "pareizā_atbilde": "Smdzenes"},
 
-    {"jautajums": "Kur atrodas sirdsdarbības centrs?", 
-     "atbildes": ["Sirdī", "Smadzeņu stumbrā", "Smadzeņu šūnās"], 
-     "pareizā_atbilde": "Plaušas"}
+    {"jautajums": "Kur atrodas balss saites?", 
+     "atbildes": ["Mutē", "Vēderā", "Balsenē"], 
+     "pareizā_atbilde": "Balsenē"}
 ]
 
 index = 0

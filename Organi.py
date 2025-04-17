@@ -26,14 +26,16 @@ jautajumi = [
      "pareizā_atbilde": "Plaušas"},
 ]
 
+index = 0
+
 organs = [
         [org.Menu(saraksts)],
-        [org.Text( )],
-        [org.T("                   "), org.Radio( 'Radio1', default=False, key='-atb0-')],
-        [org.T("                   "), org.Radio( 'Radio1', default=False, key='-atb1-')],
-        [org.T("                   "), org.Radio( 'Radio1', default=False, key='-atb2-')],
+        [org.Text(jautajumi[index]["jautajums"], key='-jaut-')],
+        [org.T("                   "), org.Radio(jautajumi[index]["atbildes"][0], 'Radio1', default=False, key='-atb0-')],
+        [org.T("                   "), org.Radio(jautajumi[index]["atbildes"][1], 'Radio1', default=False, key='-atb1-')],
+        [org.T("                   "), org.Radio(jautajumi[index]["atbildes"][2], 'Radio1', default=False, key='-atb2-')],
         [org.Button("Pareizi/Nepareizi!"), org.Button("Nākamais jautājums!")],
-
+        [org.Text("     ", key='-teksts-')]
 
 
 

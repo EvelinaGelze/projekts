@@ -20,16 +20,7 @@ organs = [
 
 
     ]  
-def pārbaudīt(atzimeta_opcija, pareiza_atbilde, logs):
-    if atzimeta_opcija.get() == pareiza_atbilde:
-        messagebox.showinfo("Rezultāts", "Pareizi!")
-    else:
-        messagebox.showinfo("Rezultāts", f"Nepareizi! Pareizā atbilde ir {pareiza_atbilde}.")
-    logs.quit()
 
-def spelet_speli():
-    aptauja = organs()
-    random.shuffle(spelet_speli)
 
 logs = org.Window("ORGĀNU SPĒLE", organs, size=(900,650))
 

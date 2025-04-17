@@ -24,8 +24,19 @@ jautajumi = [
     {"jautajums": "Kurš orgāns veic elpošanu?", 
      "atbildes": ["Plaušas", "Deguns", "Smadzenes"], 
      "pareizā_atbilde": "Plaušas"},
-]
 
+     {"jautajums": "Kurš orgāns palīdz regulēt cukura līmeni asinīs?", 
+     "atbildes": ["Aizkuņģa dziedzeris", "Kaulu smadzenes", "Smadzenes"], 
+     "pareizā_atbilde": "Aizkuņģa dziedzeris"},
+
+    {"jautajums": "Kurš orgāns atrodas galvaskausā un vada ķermeņa funkcijas?", 
+     "atbildes": ["Acis", "Kaulu smadzenes", "Smadzenes"], 
+     "pareizā_atbilde": "Plaušas"},
+
+    {"jautajums": "Kur atrodas sirdsdarbības centrs?", 
+     "atbildes": ["Sirdī", "Smadzeņu stumbrā", "Smadzeņu šūnās"], 
+     "pareizā_atbilde": "Plaušas"},
+]
 organs = [
         [org.Menu(saraksts)],
         [org.Text( )],

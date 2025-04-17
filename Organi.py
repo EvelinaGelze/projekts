@@ -1,16 +1,16 @@
 import PySimpleGUI as org
-import random
 from tkinter import messagebox
  
 # Izkārtojuma definīcija
 saraksts=[['File',['Close']], ['Help'],['About']]
 organs = [
         [org.Menu(saraksts)],
-        [org.Text("Ar ko cilvēks redz?")],
-        [org.T("                   "), org.Radio('Degunu', 'Radio1', default=False, key='-jaa-')],
-        [org.T("                   "), org.Radio('Acīm', 'Radio1', default=False, key='-nee-')],
-        [org.T("                   "), org.Radio('Rokām', 'Radio1', default=False, key='-nee-')],
-        [org.Button("Pareizi/Nepareizi!")],
+        [org.Text( )],
+        [org.T("                   "), org.Radio( 'Radio1', default=False, key='-atb0-')],
+        [org.T("                   "), org.Radio( 'Radio1', default=False, key='-atb1-')],
+        [org.T("                   "), org.Radio( 'Radio1', default=False, key='-atb2-')],
+        [org.Button("Pareizi/Nepareizi!"), org.Button("Nākamais jautājums!")],
+
 
 
 

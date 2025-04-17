@@ -61,7 +61,7 @@ organs = [
 
 logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", organs, size=(900,650))
 
-
+punkti = 0
 
 while True:
     event, values = logs.read()
@@ -76,7 +76,12 @@ while True:
         for i in range(3):
             if values[f"-atb{i}-"]:
              izvele = i
-
+    if jautajumi[index]["atbildes"][izvele] == jautajumi[index]["pareiza_atbilde"]:
+        logs['-eee-'].update("Jautājums atbildēts pareizi!")
+        punkti +=1
+        logs['-punkt-'].update(f"Tavi punkti:{punkti}/{max_punkti}")
+    else:
+        logs["-teksts-"].update("Jautājums atbildēts nepareizi!")
 
 
 

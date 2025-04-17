@@ -35,7 +35,7 @@ jautajumi = [
 
     {"jautajums": "Kur atrodas balss saites?", 
      "atbildes": ["Mutē", "Vēderā", "Balsenē"], 
-     "pareizā_atbilde": "Balsenē"}
+     "pareizā_atbilde": ""}
 ]
 
 index = 0
@@ -63,6 +63,7 @@ organs = [
 
 
 logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", organs, size=(900,650))
+
 
 
 while True:

@@ -4,11 +4,11 @@ import PySimpleGUI as org
 saraksts=[['File',['Close']], ['Help'],['About']]
 
 jautajumi = [
-    {"jautajums": "Oculus?", 
+    {"jautajums": "Oculus", 
      "atbildes": ["acis", "sirds", "plaušas"],
      "pareiza_atbilde": "acis"},
 
-    {"jautajums": "Hepaticophyta?", 
+    {"jautajums": "Hepaticophyta", 
      "atbildes": ["Nieres", "Sirds", "Aknas"], 
      "pareiza_atbilde": "Aknas"},
 
@@ -43,6 +43,7 @@ max_punkti = len(jautajumi)
 
 organs = [
         [org.Menu(saraksts)],
+        [org.Text("Ir dots latīniskais nosaukums orgānam un atbildi kā ir latviski!")],
         [org.Text(jautajumi[index]["jautajums"], key='-jaut-')],
         [org.T("                   "), org.Radio(jautajumi[index]["atbildes"][0], 'Radio1', default=False, key='-atb0-')],
         [org.T("                   "), org.Radio(jautajumi[index]["atbildes"][1], 'Radio1', default=False, key='-atb1-')],

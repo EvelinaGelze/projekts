@@ -80,11 +80,11 @@ while True:
             if values[f"-atb{i}-"]:
              izvele = i
     if jautajumi[index]["atbildes"][izvele] == jautajumi[index]["pareiza_atbilde"]:
-        logs['-eee-'].update("Jautājums atbildēts pareizi!")
+        logs['-eee-'].update("Jautājums atbildēts pareizi!", background_color= "green")
         punkti +=1
         logs['-punkt-'].update(f"Tavi punkti:{punkti}/{max_punkti}")
     else:
-        logs["-teksts-"].update("Jautājums atbildēts nepareizi!")
+        logs["-teksts-"].update("Jautājums atbildēts nepareizi!", background_color="red" )
 
 
 

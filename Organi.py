@@ -5,37 +5,37 @@ from tkinter import messagebox
 saraksts=[['File',['Close']], ['Help'],['About']]
 
 jautajumi = [
-    {"jautajums": "Redzes orgāns", 
+    {"jautajums": "Oculus?", 
      "atbildes": ["acis", "sirds", "plaušas"],
      "pareizā_atbilde": "acis"},
 
-    {"jautajums": "Bez šī orgāna tavs ķermenis nespētu attīrīt asinis un izvadīt toksīnus.", 
+    {"jautajums": "Hepaticophyta?", 
      "atbildes": ["Nieres", "Sirds", "Aknas"], 
      "pareizā_atbilde": "Aknas"},
 
-    {"jautajums": "Kurš ir cilvēka lielākais orgāns?",
+    {"jautajums": "Cutis",
      "atbildes": ["Āda", "Sirds", "Acis"], 
      "pareizā_atbilde": "Āda"},
 
-    {"jautajums": "Kurš orgāns sūknē asinis pa visu ķermeni?", 
+    {"jautajums": "Cor", 
      "atbildes": ["Plaušas", "Sirds", "Aknas"], 
      "pareizā_atbilde": "Sirds"},
 
-    {"jautajums": "Kurš orgāns veic elpošanu?", 
+    {"jautajums": "Pulmo", 
      "atbildes": ["Plaušas", "Deguns", "Smadzenes"], 
      "pareizā_atbilde": "Plaušas"},
 
-     {"jautajums": "Kurš orgāns palīdz regulēt cukura līmeni asinīs?", 
+     {"jautajums": "Pancreas", 
      "atbildes": ["Aizkuņģa dziedzeris", "Kaulu smadzenes", "Smadzenes"], 
      "pareizā_atbilde": "Aizkuņģa dziedzeris"},
 
-    {"jautajums": "Kurš orgāns atrodas galvaskausā un vada ķermeņa funkcijas?", 
+    {"jautajums": "Cerebrum", 
      "atbildes": ["Acis", "Kaulu smadzenes", "Smadzenes"], 
      "pareizā_atbilde": "Smadzenes"},
 
-    {"jautajums": "Kur atrodas balss saites?", 
+    {"jautajums": "larynx?", 
      "atbildes": ["Mutē", "Vēderā", "Balsenē"], 
-     "pareizā_atbilde": "Balsenē"}
+     "pareizā_atbilde": "Balsene"}
 ]
 
 index = 0

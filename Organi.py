@@ -62,7 +62,7 @@ organs = [
     ]  
 
 
-logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", organs, size=(900,650))
+logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", organs, size=(600,250), background_color= "")
 
 punkti = 0
 

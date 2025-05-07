@@ -5,8 +5,8 @@ from tkinter import messagebox
 saraksts=[['File',['Close']], ['Help'],['About']]
 
 jautajumi = [
-    {"jautajums": "Redzes orgāns?", 
-     "atbildes": ["acis", "sirds", "plaušas"],
+    {"jautajums": "Redzes orgāns", 
+     "atbildes": ["acis", "sirds", "plaušas"],git status
      "pareizā_atbilde": "acis"},
 
     {"jautajums": "Bez šī orgāna tavs ķermenis nespētu attīrīt asinis un izvadīt toksīnus.", 
@@ -31,11 +31,11 @@ jautajumi = [
 
     {"jautajums": "Kurš orgāns atrodas galvaskausā un vada ķermeņa funkcijas?", 
      "atbildes": ["Acis", "Kaulu smadzenes", "Smadzenes"], 
-     "pareizā_atbilde": "Smdzenes"},
+     "pareizā_atbilde": "Smadzenes"},
 
     {"jautajums": "Kur atrodas balss saites?", 
      "atbildes": ["Mutē", "Vēderā", "Balsenē"], 
-     "pareizā_atbilde": ""}
+     "pareizā_atbilde": "Balsenē"}
 ]
 
 index = 0
@@ -48,7 +48,7 @@ organs = [
         [org.T("                   "), org.Radio(jautajumi[index]["atbildes"][0], 'Radio1', default=False, key='-atb0-')],
         [org.T("                   "), org.Radio(jautajumi[index]["atbildes"][1], 'Radio1', default=False, key='-atb1-')],
         [org.T("                   "), org.Radio(jautajumi[index]["atbildes"][2], 'Radio1', default=False, key='-atb2-')],
-        [org.Text(f"Tavi punkti: 0/{max_punkti}", key='-punkt-')]
+        [org.Text(f"Tavi punkti: 0/{max_punkti}", key='-punkt-')],
         [org.Button("Pareizi/Nepareizi!"), org.Button("Nākamais jautājums!")],
         [org.Text("     ", key='-teksts-')]
 

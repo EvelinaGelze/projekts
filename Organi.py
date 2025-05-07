@@ -1,5 +1,4 @@
 import PySimpleGUI as org
-from tkinter import messagebox
  
 # Izkārtojuma definīcija
 saraksts=[['File',['Close']], ['Help'],['About']]
@@ -98,9 +97,9 @@ while True:
         layout = [
             [org.Menu(saraksts)],
             [org.Text("Spēles beigas!", font=("Helvetica", 16), background_color="red")],
-            [org.Text(f"Tu ieguvi {punkti} punktus! Yeyyyy ", background_color="pink")]
+            [org.Text(f"Tu ieguvi {punkti} punktus no {max_punkti}! Yeyyyy ", background_color="pink")]
         ]
-        logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", layout, size=(250,150))
+        logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", layout, size=(350,150))
         
 
                                    

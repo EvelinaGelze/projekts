@@ -6,7 +6,7 @@ saraksts=[['File',['Close']], ['Help'],['About']]
 
 jautajumi = [
     {"jautajums": "Redzes orgāns", 
-     "atbildes": ["acis", "sirds", "plaušas"],git status
+     "atbildes": ["acis", "sirds", "plaušas"],
      "pareizā_atbilde": "acis"},
 
     {"jautajums": "Bez šī orgāna tavs ķermenis nespētu attīrīt asinis un izvadīt toksīnus.", 

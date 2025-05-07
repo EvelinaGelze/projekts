@@ -33,9 +33,9 @@ jautajumi = [
      "atbildes": ["Acis", "Kaulu smadzenes", "Smadzenes"], 
      "pareiza_atbilde": "Smdzenes"},
 
-    {"jautajums": "larynx?", 
-     "atbildes": ["Mutē", "Vēderā", "Balsenē"], 
-     "pareizā_atbilde": "Balsene"}
+    {"jautajums": "larynx", 
+     "atbildes": ["Mute", "Vēders", "Balsene"], 
+     "pareiza_atbilde": "Balsene"}
 ]
 
 index = 0
@@ -97,9 +97,11 @@ while True:
         logs.close()
         layout = [
             [org.Menu(saraksts)],
-            [org.Text(f"Tu ieguvi {punkti} punktus! Yeyyyy ", background_color="yellow")]
+            [org.Text("Spēles beigas!", font=("Helvetica", 16), background_color="red")],
+            [org.Text(f"Tu ieguvi {punkti} punktus! Yeyyyy ", background_color="pink")]
         ]
         logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", layout, size=(250,150))
+        
 
                                    
 

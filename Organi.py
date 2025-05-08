@@ -1,7 +1,7 @@
 import PySimpleGUI as org
  
 # Izkārtojums
-saraksts=[['File',['Close']], ['Help'],['About']]
+saraksts=[['File',['Close']], ['Help',['About']]]
 
 # saraksti ar latīnisko nosaukumu un atbildēm un pareizo atbildi
 jautajumi = [

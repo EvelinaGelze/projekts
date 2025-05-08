@@ -1,8 +1,9 @@
 import PySimpleGUI as org
  
-# Izkārtojuma definīcija
+# Izkārtojums
 saraksts=[['File',['Close']], ['Help'],['About']]
 
+# saraksti ar latīnisko nosaukumu un atbildēm un pareizo atbildi
 jautajumi = [
     {"jautajums": "Oculus", 
      "atbildes": ["acis", "sirds", "plaušas"],
@@ -38,7 +39,7 @@ jautajumi = [
 ]
 
 index = 0
-
+# maksimālie punkti ir jautājumu daudzums
 max_punkti = len(jautajumi)
 
 organs = [
@@ -51,12 +52,6 @@ organs = [
         [org.Text(f"Tavi punkti: 0/{max_punkti}", key='-punkt-')],
         [org.Button("Nākamais jautājums!")],
         [org.Text("     ", key='-teksts-')]
-
-
-
-
-
-
 
 
     ]  
@@ -76,35 +71,38 @@ while True:
         org.popup('Autori: Emīls Ronis un Evelīna Ģelze')
 
 
+    # ja tiek nospiesta poga "Nākamais jautājums!" tad
     elif event=="Nākamais jautājums!":
         for i in range(3):
             if values[f"-atb{i}-"]:
                 izvele = i
     
+    # ja tiek atbildēts pareizi tad parādās, ka atbildēts pareizi
     if jautajumi[index]["atbildes"][izvele] == jautajumi[index]["pareiza_atbilde"]:
        logs['-teksts-'].update("Jautājums atbildēts pareizi!", background_color= "green")
+       # pieskaita punktu klāt par pareizu atbildi
        punkti +=1
        logs['-punkt-'].update(f"Tavi punkti:{punkti}/{max_punkti}")
+       # ja atbildēts nepareizi parādās ziņa
     else:
         logs["-teksts-"].update("Jautājums atbildēts nepareizi!", background_color="red" )
-
+    # ja atbild uz jautājumu nomainās jautājums un atbildes
     index += 1 
     if index < max_punkti:
         logs['-jaut-'].update(jautajumi[index]["jautajums"])
         for i in range(3):
             logs[f'-atb{i}-'].update(text=jautajumi[index]["atbildes"][i])
+    # savādāk aizveras logs un attaisās cits logs kas parāda cik punkti ir no maksimāliem punktiem
     else:
         logs.close()
+
         layout = [
             [org.Menu(saraksts)],
-            [org.Text("Spēles beigas!", font=("Helvetica", 16), background_color="red")],
+            [org.Text("Spēles beigas!", background_color="red")],
             [org.Text(f"Tu ieguvi {punkti} punktus no {max_punkti}! Yeyyyy ", background_color="pink")]
         ]
         logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", layout, size=(350,150))
         
 
                                    
-
-
-
 logs.close()

@@ -68,7 +68,7 @@ while True:
     if event == org.WINDOW_CLOSED or event=='Close':
         break
     elif event=='About':
-        org.popup('Autori: Emīls Ronis un Evelīna Ģelze')
+        org.popup('Autori: Emīls Ronis un Evelīna Ģelze', icon="ikona.ico")
 
 
     # ja tiek nospiesta poga "Nākamais jautājums!" tad

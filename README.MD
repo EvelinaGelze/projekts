@@ -5,3 +5,5 @@ Programmas prasības - tā kā programma tika taisīta ar python versijām 3.11.
 Projekta struktūra - Organi.py (galvenis kods), README.md (dokumentācija) , ikona (ikona.ico) un fotoattēls (happy2.png)
 
 Programma strādā un ir pārbaudīta uz Windows 11 Pro
+
+AI tikai izmantots - lai izprastu kā tiek veidota dokumentācija(vispārīgā veidā), lai pārbaudītu vai ir/nav kļūdas, lai atrastu risinājumu kļūdām - (About poga, bildes happy2 pārveidošana no jpg uz png faila.) 

@@ -57,7 +57,7 @@ organs = [
     ]  
 
 
-logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", organs, size=(600,250))
+logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", organs, size=(600,250), icon="ikona.ico")
 
 punkti = 0
 
@@ -96,12 +96,15 @@ while True:
     else:
         logs.close()
 
+        img = "happy2.png"
+
         layout = [
             [org.Menu(saraksts)],
             [org.Text("Spēles beigas!", background_color="red")],
-            [org.Text(f"Tu ieguvi {punkti} punktus no {max_punkti}! Yeyyyy ", background_color="pink")]
+            [org.Text(f"Tu ieguvi {punkti} punktus no {max_punkti}! Yeyyyy ")],
+            [org.Image(img)]
         ]
-        logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", layout, size=(350,150))
+        logs = org.Window("MINĒŠANAS SPĒLE - ORGĀNI", layout, size=(750,550), icon="ikona.ico")
         
 
                                    

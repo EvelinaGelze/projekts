@@ -1,4 +1,4 @@
-Mērķis -   Papildināt cilvēka zināšanas caur spēli par latīņu valodas cilvēku orgānu nosaukumiem.
+Mērķis -   Papildināt cilvēka zināšanas caur spēli, kurā ir doti latīņu valodā cilvēku orgānu nosaukumi.
 
 Programmas prasības - tā kā programma tika taisīta ar python versijām 3.11.3 un 3.12.1 vēlams būtu izmantot programmu ar šīm versijām vai jaunāku, lai iegūtu vēlamo rezultātu. Kā arī izmantojām tikai PySimpleGUI bibliotēku.
 
